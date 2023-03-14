@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+:root {
+    --branco-principal: #FFFFFF;
+    --cinza-secundario: #C0C0C0;
+    --botao-azul: #167BF7;
+    --cor-de-fundo: #00030C;
+    --fonte-principal: 'Inter', sans-serif;
+    --botao-azul-efeito: #63a5f7;
+}
+
+body {
+    background-color: var(--cor-de-fundo);
+    color: var(--branco-principal);
+    font-family: var(--fonte-principal);
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container__titulo {
+    font-weight: 700;
+    font-size: 1.75rem;
+}
+
+.container__imagem {
+    margin: 1em 2em;
+}
+
+.principal {
+    background-image: url("../assets/Background.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    align-items: center;
+    text-align: center;
+}
+
+.container__caixa {
+    margin: 0 6em;
+}
+
+.container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.container__botao {
+    color: var(--branco-principal);
+    padding: 1em;
+    background-color: var(--botao-azul);
+    border-radius: 8px;
+    display: block;
+    text-decoration: none;
+    margin: 1em;
+}
+
+.botao_secundario {
+    background-color: transparent;
+    border: 2px solid var(--branco-principal);
+}
+
+.container__aviso {
+    font-size: 0.75rem;
+    color: var(--cinza-secundario);
+}
+
+.secundario {
+    align-items: center;
+    margin: 0 10em;
+
+}
+
+.secundario__imagem {
+    width: 80%;
+}
+
+.descricao__titulo {
+    font-weight: 700;
+    font-size: 3rem;
+    margin-bottom: 0.1em;
+}
+
+.descricao__texto {
+    color: var(--cinza-secundario);
+    font-size: 1rem;
+}
+
+.secundario__botao {
+    display: inline-block;
+}
+
+.container__descricao {
+    padding: 2em;
+}
+
+.dispositivos__titulo {
+    font-size: 3rem;
+    color: var(--branco-principal);
+}
+
+.dispositivos__lista {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 5em 0;
+}
+
+.dispositivos {
+    text-align: center;
+}
+
+.lista__item {
+    font-size: 2rem;
+    color: var(--branco-principal);
+}
+
+.rodape {
+    text-align: center;
+}
+
+.rodape__lista {
+    display: flex;
+    list-style: none;
+    margin: 2em 0 1em 0;
+    justify-content: center;
+}
+
+.rodape__lista__links a{
+    font-size: 1rem;
+    color: var(--branco-principal);
+    text-decoration: none;
+    color: var(--cinza-secundario);
+    margin: 0 0.5em;
+}
+
+.rodape__lista__links a:hover {
+    color: var(--botao-azul);
+}
+
+.rodape__lista__links a:active {
+    color: purple;
+}
+
+.rodape__descricao {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+    margin: 0 7.5em 5em;
+}
+
+.rodape__descricao__consideracoes {
+    font-size: 0.875rem;
+    color: var(--cinza-secundario);
+}
+
+.container__botao:hover {
+    background-color: var(--botao-azul-efeito);
+    color: var(--cor-de-fundo);
+}
